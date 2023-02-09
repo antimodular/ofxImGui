@@ -139,10 +139,10 @@ bool ofxImGui::BeginTree(ofAbstractParameter& parameter, Settings& settings)
 }
 
 //--------------------------------------------------------------
-bool ofxImGui::BeginTree(const std::string& name, Settings& settings)
+bool ofxImGui::BeginTree(const std::string& name, Settings& settings, bool collapse)
 {
 	bool result;
-    ImGui::SetNextTreeNodeOpen(true, ImGuiCond_Appearing);
+    ImGui::SetNextTreeNodeOpen(!collapse, ImGuiCond_Appearing);
 	if (settings.treeLevel == 0)
 	{
 		result = ImGui::TreeNodeEx(GetUniqueName(name), ImGuiTreeNodeFlags_Framed | ImGuiTreeNodeFlags_NoAutoOpenOnLog);

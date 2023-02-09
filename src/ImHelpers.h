@@ -56,7 +56,7 @@ namespace ofxImGui
 	void EndWindow(Settings& settings);
 
 	bool BeginTree(ofAbstractParameter& parameter, Settings& settings);
-	bool BeginTree(const std::string& name, Settings& settings);
+	bool BeginTree(const std::string& name, Settings& settings, bool collapse=false);
 	void EndTree(Settings& settings);
 
 	void AddGroup(ofParameterGroup& group, Settings& settings);

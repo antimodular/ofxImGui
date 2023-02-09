@@ -7,7 +7,7 @@ namespace ofxImGui
     void DefaultTheme::setup()
     {
         ofColor col_main_text = ofColor::fromHex(0xdbede2);
-        ofColor col_main_head = ofColor::fromHex(0xd12d49);
+        ofColor col_main_head = ofColor::fromHex(0x10345c);
         ofColor col_main_area = ofColor::fromHex(0x333844);
         ofColor col_win_popup = ofColor::fromHex(0x77c4d3);
         ofColor col_win_backg = ofColor::fromHex(0x21232b);
